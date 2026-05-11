@@ -21,12 +21,12 @@
             "src": "/(.*)",
             "dest": "/public/$1"
         }
-
     ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://yourproductionurl.com",
+        "APP_URL": "https://simantap-inky.vercel.app/",
+        "APP_KEY": "base64:MhjTzllxn1JWGfsMzcdCfE8iOHc4mkvASVCi6XyyNVI=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
