@@ -14,8 +14,8 @@
             "dest": "/favicon.ico"
         },
         {
-            "src": "/(.*)",
-            "dest": "/public/build/assets/"
+            "src": "/build/(.*)",
+            "dest": "/public/build/assets/$1"
         },
         {
             "src": "/(.*)",
