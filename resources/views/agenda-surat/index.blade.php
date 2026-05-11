@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-    <link rel="stylesheet" href="{{ asset('css/app-64QsGoLB.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{--
+    <link rel="stylesheet" href="{{ asset('css/app-64QsGoLB.css') }}"> --}}
 
     <style>
         @media print {
@@ -202,10 +203,10 @@
 
                             </td>
                             <td class="border px-3 py-2">
-                               @if($item->disposisikan_display)
-                                    <span class="px-2 py-1 rounded-lg text-xs font-semibold bg-blue-100 text-blue-700">
-                                        {{ $item->disposisikan_display }}
-                                    </span>
+                                @if($item->disposisikan_display)
+                                <span class="px-2 py-1 rounded-lg text-xs font-semibold bg-blue-100 text-blue-700">
+                                    {{ $item->disposisikan_display }}
+                                </span>
                                 @else
                                 -
                                 @endif
@@ -248,7 +249,7 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/app-B_Do3-c-.js') }}"></script>
+    {{-- <script src="{{ asset('js/app-B_Do3-c-.js') }}"></script> --}}
 
 </body>
 
