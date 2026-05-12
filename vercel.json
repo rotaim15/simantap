@@ -1,9 +1,8 @@
 {
     "version": 2,
     "framework": null,
-    "installCommand": "composer install --no-dev && npm install && npm run build",
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.4" }
+        "api/index.php": { "runtime": "vercel-php@0.9.0" }
     },
     "routes": [
         {
@@ -11,16 +10,8 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/favicon.ico",
-            "dest": "/favicon.ico"
-        },
-        {
             "src": "/build/(.*)",
             "dest": "/public/build/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/public/$1"
         },
 
         {
